@@ -8,6 +8,14 @@ from datetime import timedelta, datetime
 from dateutil import parser
 import tqdm
 
+'''
+This script downloads trading data ['timestamp', 'open', 'high', 'low', 'close',
+'volume', 'close_time', 'quote_av', 'trades', 'tb_base_av', 'tb_quote_av'] from 
+Binance using Binance API and generates .csv files filled with the data separately for each of the 
+requested tickers. Also, a large portion of the code below was taken 
+https://github.com/sammchardy/python-binance.'''
+
+
 path = "/Users/"# set your current workind directory
 os.chdir(path) # change a workind director
 
